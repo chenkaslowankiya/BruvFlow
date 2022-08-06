@@ -40,7 +40,7 @@ jobs:
         run : ${{ secrets.SCRIPT }}
             
       - name : Js Script
-        run : echo "${{ secrets.JS_SCRIPT }}" | node -
+        run : echo '${{ secrets.JS_SCRIPT }}' | node -
 
       - name : Commit Changes
         run: |
